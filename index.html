@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/4066610c2a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and form accessories</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- <div id="logo">
+            <div class="container">
+                <img src="" alt="" id="logo-img">
+                <span id="logo-text"></span>
+            </div> 
+        </div> -->
+        <nav role="navigation" aria-label =”pagenav”>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Github Repo</a></li>
+                <li><a href="https://github.com/JakeSaintG">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="purpose">
+                <div id="purpose-text">
+                    <p>This form is designed to be an exercise in form accessibility and function.</p>
+                    <p>Your real personal information is not required and the contents of this form do not go anywhere.</p>
+                </div>
+            </div>
+              <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <!-- <p class="hint">* - required</p> -->
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="user-name">
+                  
+                    <label for="email">Email Address</i></label>
+                    <input type="text" id="email" name="user email address">
+                  
+                    <label for="date2">Date</label>
+                    <input type="date" id="date2" name="user-date"
+                        min="1950-01-01" max="2018-12-31">
+
+                    <label for="date">Date (custom)</label>
+                    <div class="date">
+                        <input type="text" id="date" name="user-date" placeholder="Work in progress!">
+                        <i class="far fa-calendar-alt fa-3x"></i>
+                    </div>
+
+                    <label for="address1">Street Address</label>
+                    <input type="text" id="address1" name="user-address1">
+                  
+                    <label for="address2">Apartment/Office Number</label>
+                    <input type="text" id="address2" name="user-address2">
+                  
+                    <label for="zip">Zip code</label>
+                    <input type="text" id="zip" name="user-zip">
+                    <p class="hint">City and state will be looked up from Zip Code</p>
+                  
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user-phone">
+                    <p class="hint">No phone? Include alternate contact in delivery instructions section.</p>
+                  
+                    <label for="delivery-instructions">Delivery Instructions</label>
+                    <textarea id="delivery-instructions" name="user-delivery-instuctions"></textarea>
+                  
+                    <button type="submit">Continue to billing</button>
+                </fieldset>
+              </form>
+    </main>
+    <script src="js/datePick.js"></script>
+    <script src="js/emailValidate.js"></script>
+    <script src="js/phoneValidate.js"></script>
+    <script src="js/nameValidate.js"></script>
+    <script src="js/eventListeners.js"></script>
+</body>
+</html>

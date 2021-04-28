@@ -1,0 +1,122 @@
+* {box-sizing: border-box;}
+html {font-size: 18px;}
+
+body {
+    background: #f9f4f0;
+    color: rgb(57, 9, 80);
+    font-family: 'DotGothic16', sans-serif;
+    margin: 0px;
+    background: linear-gradient(180deg, rgb(224, 216, 205) 50%, rgb(201, 188, 172) 90%);
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav > ul  {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly; 
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, #aa34d9, #b82bb8);
+}
+
+li {
+    width: 100%;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+}
+
+#purpose {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+#purpose i {
+    margin-right: 12px;
+    color: #465;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block; 
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    display: block; 
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px; 
+    font-size: 18px;
+    color: #333;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid #09f;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+}
+
+.date > i {
+    margin-left: 10px;
+    /* height: 46px; */
+}
+
+.hint {
+    font-weight: 300;
+    color: #666;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: linear-gradient(180deg, #aa34d9, #b82bb8);
+    color: #f9f4f0;
+    width: 100%;
+    max-width: 430px;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin: 1.5rem auto 2.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(180deg, #8e2bb8, #9e269e);
+}
+
+.error-input {
+    border: 3px solid #d00;
+}
+.error-text {
+    color: #d00;
+}
