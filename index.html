@@ -45,8 +45,7 @@
                     <input type="text" id="email" name="user email address">
                   
                     <label for="date2">Date</label>
-                    <input type="date" id="date2" name="user-date"
-                        min="1950-01-01" max="2018-12-31">
+                    <input type="date" id="date2" name="user-date"min="1950-01-01" max="2018-12-31">
 
                     <label for="date">Date (custom)</label>
                     <div class="date">
@@ -63,9 +62,21 @@
                     <label for="zip">Zip code</label>
                     <input type="text" id="zip" name="user-zip">
                     <p class="hint">City and state will be looked up from Zip Code</p>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user-city">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="user-state">
+                    </div>
                   
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user-phone">
+                    <label for="phoneMask">Phone Number (Mask)</label>
+                    <p class="hint">Will be formatted for you with input mask. (ex: "1 234 567 8901" or "123 456 7890")</p>
+                    <input type="tel" id="phoneMask" class="phoneMask" name="user-phone">
+                    <p class="hint">No phone? Include alternate contact in delivery instructions section.</p>
+
+                    <label for="phone">Phone Number (RegEx)</label>
+                    <p class="hint">Will format phone number after entry.</p>
+                    <input type="tel" id="phone" class="phone" name="user-phone">
                     <p class="hint">No phone? Include alternate contact in delivery instructions section.</p>
                   
                     <label for="delivery-instructions">Delivery Instructions</label>
@@ -80,5 +91,6 @@
     <script src="js/phoneValidate.js"></script>
     <script src="js/nameValidate.js"></script>
     <script src="js/eventListeners.js"></script>
+    <script src="js/phoneInputMask.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+const phoneInput = document.getElementById("phone");
+
 function createListener(validator) {
     return e => {
       const text = e.target.value;
@@ -17,6 +19,8 @@ function createListener(validator) {
 //     }
 // }
 
+
+//need if statement to make it pick which listener to use1
 nameInput.addEventListener("input", createListener(isValidName));
 
 nameInput.addEventListener("blur", e => {
